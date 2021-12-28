@@ -265,7 +265,7 @@ a:focus {
 }
 
 .post-list-item p {
-  margin-bottom: var(--spacing-0);
+  /* margin-bottom: var(--spacing-0); */
 }
 
 .post-list-item h2 {
@@ -277,6 +277,10 @@ a:focus {
 
 .post-list-item header {
   margin-bottom: var(--spacing-4);
+}
+
+.post-list-item .read-more {
+  margin-top: var(--spacing-2);
 }
 
 .header-link-home {

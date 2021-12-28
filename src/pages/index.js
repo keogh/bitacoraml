@@ -29,7 +29,7 @@ const BlogIndex = ({ data, location }) => {
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
+          const title = post.frontmatter.title
 
           return (
             <li key={post.fields.slug}>
@@ -41,19 +41,31 @@ const BlogIndex = ({ data, location }) => {
                 <header>
                   <h2>
                     <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
+                      <span itemProp="headline">{post.frontmatter.date}</span>
+                      {title && (
+                        <span itemProp="subHeadline">
+                          &nbsp;-&nbsp;{title}
+                        </span>
+                      )}
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
                 </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
+                {post.frontmatter.description ? (
+                  <>
+                    <section
+                      dangerouslySetInnerHTML={{ __html: post.frontmatter.description }}
+                      itemProp="description"
+                    />
+                    <p className="read-more">
+                      <Link to={post.fields.slug} itemProp="url">Read More</Link>
+                    </p>
+                  </>
+                ) : (
+                  <section
+                    dangerouslySetInnerHTML={{ __html: post.html }}
+                    itemProp="articleBody"
                   />
-                </section>
+                )}
               </article>
             </li>
           )
@@ -74,7 +86,6 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
-        excerpt
         fields {
           slug
         }
@@ -83,6 +94,7 @@ export const pageQuery = graphql`
           title
           description
         }
+        html
       }
     }
   }
