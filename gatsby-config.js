@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Bitácora ML`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Isaac Zepeda`,
+      summary: `En esta bitácora personal registro el progreso de lo que estudio y aprendo sobre Machine Learning.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Una bitácora personal de Machine Learning.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `el_keogh`,
     },
   },
   plugins: [
