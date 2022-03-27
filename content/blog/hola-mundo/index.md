@@ -1,7 +1,7 @@
 ---
 title: Bienvenida
 date: 2021-12-28
-description: La idea de llevar una bitácora sobre mi progreso en Machine Learning
+description:
 ---
 
 La idea de llevar una bitácora sobre mi progreso en Machine Learning surgió cuando hice mi [#66DaysofData](https://twitter.com/search?q=(%2366daysofdata)%20(from%3Ael_keogh)&src=typed_query) en twitter.

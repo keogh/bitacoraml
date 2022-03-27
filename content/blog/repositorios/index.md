@@ -1,7 +1,7 @@
 ---
 title: Repositorios
 date: 2022-03-21T18:27:53.654Z
-description: Incluí repositorios
+description:
 ---
 He creado un par de repositorios de algunos proyectos viejos que tenía en mi computadora si haberlos subido a Github.
 
