@@ -25,7 +25,7 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Bitácora ML
+        © 2021 - {new Date().getFullYear()}, Bitácora ML
       </footer>
     </div>
   )
