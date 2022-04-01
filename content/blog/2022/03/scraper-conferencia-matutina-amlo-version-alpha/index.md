@@ -4,7 +4,7 @@ date: 2022-03-30T15:47:26.382Z
 tags:
   - scraper
   - dataset
-  - ""
+  - conferencia-matutina-amlo
 ---
 Hice un scraper para sacar las [versiones estenográficas de las conferencias matutinas y otros discursos del Presidente de México Andrés Manuel López Obrador (AMLO)](https://presidente.gob.mx/secciones/version-estenografica/). Esta es la primera versión, guarda el título and el contenido en archivos txt en carpetas ordenadas por fecha.
 
