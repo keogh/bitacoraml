@@ -6,7 +6,7 @@ module.exports = {
       summary: `En esta bitácora personal registro el progreso de lo que estudio y aprendo sobre Machine Learning.`,
     },
     description: `Una bitácora personal de Machine Learning.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://bitacoraml.com/`,
     social: {
       twitter: `el_keogh`,
     },
