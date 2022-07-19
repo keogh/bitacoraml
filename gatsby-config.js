@@ -7,7 +7,7 @@ module.exports = {
     },
     description: `Una bitácora personal sobre Machine Learning.`,
     siteUrl: `https://bitacoraml.com/`,
-    metaImageUrl: `https://bitacoraml.com/static/preview.jpeg`,
+    metaImageUrl: `https://bitacoraml.com/preview.jpeg`,
     social: {
       twitter: `el_keogh`,
     },
