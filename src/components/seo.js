@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Seo = ({ description, lang, meta, title }) => {
+const Seo = ({ description, lang, meta, title, url, image }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -18,6 +18,8 @@ const Seo = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
+            metaImageUrl
+            siteUrl
             social {
               twitter
             }
@@ -29,6 +31,8 @@ const Seo = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const metaUrl = url || site.siteMetadata?.siteUrl
+  const metaImage = image || site.siteMetadata?.metaImageUrl
 
   return (
     <Helmet
@@ -39,8 +43,20 @@ const Seo = ({ description, lang, meta, title }) => {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
+          name: 'title',
+          content: title,
+        },
+        {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          property: `og:type`,
+          content: `website`,
+        },
+        {
+          property: `og:url`,
+          content: metaUrl,
         },
         {
           property: `og:title`,
@@ -51,16 +67,16 @@ const Seo = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: `og:image`,
+          content: metaImage,
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.social?.twitter || ``,
+          name: `twitter:url`,
+          content: metaUrl,
         },
         {
           name: `twitter:title`,
@@ -69,6 +85,14 @@ const Seo = ({ description, lang, meta, title }) => {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: metaImage,
+        },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata?.social?.twitter || ``,
         },
       ].concat(meta)}
     />

@@ -5,8 +5,9 @@ module.exports = {
       name: `Isaac Zepeda`,
       summary: `En esta bitácora personal registro el progreso de lo que estudio y aprendo sobre Machine Learning.`,
     },
-    description: `Una bitácora personal de Machine Learning.`,
+    description: `Una bitácora personal sobre Machine Learning.`,
     siteUrl: `https://bitacoraml.com/`,
+    metaImageUrl: `https://bitacoraml.com/static/preview.jpeg`,
     social: {
       twitter: `el_keogh`,
     },
