@@ -100,7 +100,7 @@ const Seo = ({ description, lang, meta, title, url, image }) => {
 }
 
 Seo.defaultProps = {
-  lang: `en`,
+  lang: `es`,
   meta: [],
   description: ``,
 }
