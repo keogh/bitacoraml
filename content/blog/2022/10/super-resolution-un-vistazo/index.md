@@ -5,7 +5,7 @@ tags:
   - GAN
   - super-resolution
 ---
-El fin de semana el Punksolid me alborotó mostrándome repositorios con modelos para mejorar la calidad y resolució de imágenes y videos. Eso me llevó a un agujero sin fondo y descubrí algunas cosas interesantes como que el problema es llamado *Image/Video Super Resolution*.
+El fin de semana el [Punksolid](https://twitter.com/punksolid) me alborotó mostrándome repositorios con modelos para mejorar la calidad y resolució de imágenes y videos. Eso me llevó a un agujero sin fondo y descubrí algunas cosas interesantes como que el problema es llamado *Image/Video Super Resolution*.
 
 Descubrí que para este problema se usan *Generative Adversarial Networks* (GAN). Aquí listo algunos de los links más interesantes que encontré, definitivamente va a ser un tema que estudiaré en los próximos meses.
 
