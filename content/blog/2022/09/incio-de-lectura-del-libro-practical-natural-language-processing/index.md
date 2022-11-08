@@ -20,6 +20,6 @@ Ya leí los primeros cuatro capítulos.
 
 Voy empezando el capítulo cinco que habla de Extracción de Información o en inglés Information Extraction (IE). En siguientes entradas les comentaré mi progreso sobre el tema.
 
-A﻿quí la portada del libro.
+Aquí la portada del libro.
 
 ![Libro títulado en inglés Practical Natural Language Processing, de portada tienen un pájaro parecido a un cotorro de color rojo con la panza púrpura parado en una pata sobre una rama](img_4962.jpeg)
