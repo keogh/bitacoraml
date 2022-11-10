@@ -3,7 +3,6 @@ title: Classification Report para el clasificador de texto
 date: 2022-08-23T13:54:52.699Z
 tags:
   - NLP
-  - ""
 ---
 El mes pasado hice un [clasificador de texto con un 90% de accuracy](https://bitacoraml.com/2022/07/clasificador-de-texto-real/), mi primer pensamiento fue que algo estaba mal ya que era un accuracy muy alto para un modelo muy sencillo, solo un par de simples RNN (Recurrent Neural Networks).
 

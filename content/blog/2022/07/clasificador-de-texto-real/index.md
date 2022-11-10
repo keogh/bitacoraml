@@ -3,7 +3,6 @@ title: Clasificador de Texto real
 date: 2022-07-16T14:15:21.991Z
 tags:
   - NLP
-  - ""
 ---
 Ya hace varias semanas un amigo me proporcionó un dataset donde una persona entra un texto y selecciona una categoría para clasificar ese texto. La idea es poder clasificar ese texto automáticamente.
 

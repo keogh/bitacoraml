@@ -1,6 +1,7 @@
 ---
 title: "Diffusers from Hugging Face"
 date: 2022-11-08
+image: medieval.png
 tags:
   - stable-difussion
   - hugging-face
