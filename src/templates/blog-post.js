@@ -10,11 +10,16 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
+  const seoImage = post.frontmatter.image?.publicURL
+    ?  `${data.site.siteMetadata.siteUrl}${post.frontmatter.image?.publicURL}`
+    : null;
+
   return (
     <Layout location={location} title={siteTitle}>
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        image={seoImage}
       />
       <article
         className="blog-post"
@@ -75,6 +80,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(id: { eq: $id }) {
@@ -85,6 +91,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        image {
+          publicURL
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
