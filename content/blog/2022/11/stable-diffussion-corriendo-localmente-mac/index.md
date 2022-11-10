@@ -1,6 +1,7 @@
 ---
 title: "Stable Diffusion corriendo localmente en Mac"
 date: 2022-11-10
+image: apple.png
 tags:
   - stable-difussion
   - pytorch
