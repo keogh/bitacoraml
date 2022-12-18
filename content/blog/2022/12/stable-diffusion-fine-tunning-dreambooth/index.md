@@ -1,7 +1,7 @@
 ---
 title: "Stable Diffusion fine-tunning usando Dreambooth"
 date: 2022-12-18
-# image: apple.png
+image: 005.png
 tags:
   - stable-difussion
   - dreambooth
@@ -21,3 +21,16 @@ Después de algunos intentos e invertir $208 MXN en Compute Engines para Google 
 
 * [Notebook para cargar modelos y usar todas las opciones de Stable Diffusion](https://colab.research.google.com/github/TheLastBen/fast-stable-diffusion/blob/main/fast_stable_diffusion_AUTOMATIC1111.ipynb)
 
+Aquí algunas de las fotos más interesantes que pude generar. Los atributos `alt` y `title` de algunas de las imágenes continenen el prompt que usé.
+
+```grid|3
+![Highly detailed portrait of keogh, stephen bliss, unreal engine, fantasy art by greg rutkowski, loish, rhads, ferdinand knab, mako](./001.png)
+![Highly detailed portrait of keogh, stephen bliss, unreal engine, fantasy art by greg rutkowski, loish, rhads, ferdinand knab, mako](./002.png)
+![](./003.png)
+![keogh by agnes cecile enki bilal moebius, watercolor, intricated details, full body portrait, extremely luminous bright design, pa](./004.png)
+![a ultradetailed beautiful panting of keogh shooting a free throw, by conrad roset, greg rutkowski and makoto shinkai, trending on](./005.png)
+![eogh by agnes cecile enki bilal moebius, watercolor, intricated details, full body portrait, extremely luminous bright design, pa](./006.png)
+![](./007.png)
+![keogh portrait as graffiti, street art, trending on artstation](./008.png)
+![Portrait of keogh as the king of the underworld, surrounded by flowers by karol bak, james jean, tom bagshaw, rococo, trending on](./009.png)
+```

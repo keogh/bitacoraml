@@ -34,6 +34,15 @@ module.exports = {
       options: {
         plugins: [
           {
+            // NOTE: It seems this needs to go first
+            resolve: "gatsby-remark-images-grid",
+            options: {
+              // className: "myCustomClassName",
+              gridGap: "15px",
+              margin: "20px auto",
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 630,
@@ -48,14 +57,6 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
-          {
-            resolve: "gatsby-remark-images-grid",
-            // options: {
-            //   className: "myCustomClassName",
-            //   gridGap: "20px",
-            //   margin: "20px auto",
-            // },
-          }
         ],
       },
     },
