@@ -48,6 +48,14 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          {
+            resolve: "gatsby-remark-images-grid",
+            // options: {
+            //   className: "myCustomClassName",
+            //   gridGap: "20px",
+            //   margin: "20px auto",
+            // },
+          }
         ],
       },
     },
