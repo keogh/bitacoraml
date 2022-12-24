@@ -21,7 +21,7 @@ Después de algunos intentos e invertir $208 MXN en Compute Engines para Google 
 
 * [Notebook para cargar modelos y usar todas las opciones de Stable Diffusion](https://colab.research.google.com/github/TheLastBen/fast-stable-diffusion/blob/main/fast_stable_diffusion_AUTOMATIC1111.ipynb)
 
-Aquí algunas de las fotos más interesantes que pude generar. Los atributos `alt` y `title` de algunas de las imágenes continenen el prompt que usé.
+Aquí algunas de las fotos más interesantes que pude generar. Los atributos `alt` y `title` de algunas de las imágenes continenen el prompt que usé. Por cierto algunos de los prompts los copié de [un hilo en twitter que publicó @FridaRuh](https://twitter.com/FridaRuh/status/1594508445193240576)
 
 ```grid|3
 ![Highly detailed portrait of keogh, stephen bliss, unreal engine, fantasy art by greg rutkowski, loish, rhads, ferdinand knab, mako](./001.png)
