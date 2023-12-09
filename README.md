@@ -1,6 +1,5 @@
 Bitacora ML Site
 
-### DEPRECATED, the site was moved to substack https://www.bitacoraml.com/
+This is the official repository for the [http://bitacoraml.com](http://bitacoraml.com).
 
-README WIP
-
+This site is deploy using netlify
